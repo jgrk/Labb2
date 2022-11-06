@@ -1,0 +1,11 @@
+1.c
+
+RESIDUAL:
+
+	r =  -8.881784197001252e-16
+
+	Varför värdet på r:
+		
+		Datorn kan inte hantera tal med många decimaler, i dessa beräkningar 
+		avrundas då talet i fråga vilket, ger en rest. Det är denna rest som är
+		residualen i det här fallet. Dvs avvikelsen från det egentliga värdet.
