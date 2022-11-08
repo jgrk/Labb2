@@ -1,0 +1,16 @@
+a)
+    X=5.5
+    Y=4.7857
+    R=4.4733
+
+c)
+    Vi får samma rötter, att skalärmultiplicera en av ekv. i sys. ger samma
+    ekv. sys.
+
+g)
+    Samma som a)
+
+h)
+    Samma som a)
+
+    
