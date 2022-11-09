@@ -56,16 +56,16 @@ r2=x1;
 period = r2-r1;
 
 function [du]=DE(t,u)
-    L=2.4;
+    L=2.7;
     g=9.82;
     du(1)=u(2);
     du(2)=-g/L*sin(u(1));
     du=[du(1); du(2)];
 end
-    
-   
-
-
+%     
+%    
+% 
+% 
 
 
 
