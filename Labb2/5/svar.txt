@@ -1,0 +1,8 @@
+a)
+    Inga lösningar, genom att bryta ut ett minustecken och byta plats på 
+    intervallgränserna får vi att något som alltid är negativt blir positivt.
+
+b) -
+
+c)
+    Trapetsregeln, Interpolation, Sekant metoden, 

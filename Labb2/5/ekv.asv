@@ -1,0 +1,11 @@
+function value = ekv(k,h)
+integ=@(x)exp(0.5*(k*x)/(3*k+x));
+T=sum([integ()])
+    
+
+end
+
+
+
+end
+
