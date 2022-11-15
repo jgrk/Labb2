@@ -1,16 +1,39 @@
 
-func=@(k,h)(VL(k,h)-7*(2-k)^4);
+clear; close all; clc;
 
-t=1; k0=1; k1=2; h=1;
+clc;clear;close all;
+
+h=1; tol=10^-8;
+
+k=0;
+
+f=@(x)(exp(.5*(k*x)./(3*k+x)));
+
+func=@(k)(integral(f,1,4*k,"AbsTol",tol)-7*(2-k)^7);
+% x=1:h:4;
+
+% plot(x,arrayfun(func,x))
+
+%%
+
+k0=1; k1=2;
+
+r1 = SekMet(func,k0,k1,tol);
+
+%%
+
+k0=3; k1=4;
+
+r2 = SekMet(func,k0,k1,tol);
+%%
 
 
 
-while abs(t) > 10^-8
-    
-    t=func(k1,h)*(k1-k0)/(func(k1,h)-func(k0,h));
-    k=k1-t; k0=k1; k1=k;
 
-end
+
+
+
+
 
 
 

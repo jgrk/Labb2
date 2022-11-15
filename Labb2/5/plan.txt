@@ -1,0 +1,9 @@
+Plan:
+
+1.
+    Börja med att göra en funktion som approximerar VL med trapetsregeln
+    efter givna värden k och h.
+
+2.
+    
+   
