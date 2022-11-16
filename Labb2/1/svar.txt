@@ -1,4 +1,4 @@
-b)
+d)
     Period: 3.57010733633814s, gradtal 2
 
 e) 

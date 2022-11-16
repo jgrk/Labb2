@@ -2,7 +2,11 @@ a)
     Inga lösningar, genom att bryta ut ett minustecken och byta plats på 
     intervallgränserna får vi att något som alltid är negativt blir positivt.
 
-b) -
+b) 
+    3 st lösningar
 
 c)
-    Trapetsregeln, Interpolation, Sekant metoden, 
+    Matlab functktionen integrals (addaptiv kvadratur), Sekantmetoden
+    
+d)
+    k=1.110346284375255e+00, med en felgräns 10^-7

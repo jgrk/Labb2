@@ -1,4 +1,7 @@
+
 function [T] = CDM(a,b,h)
+
+format long e
 
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
