@@ -3,14 +3,12 @@ function [T] = CDM(a,b,h)
 
 format long e
 
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%Returnerar värden erhållna genom centrala differans metoden
 
 k=@(x)(2+x/3); dk=1/3; %Givna funktionen k
 Q=@(x)(280*exp(-(x-1.8)^2)); %Givna funktionen Q
 
 x=a+h:h:b-h; 
-% T=zeros(length(x),1);%Sökt
 T0=315; TL=445;
 
 b=zeros(length(x),1); %Kända Termer/Högerled b

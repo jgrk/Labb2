@@ -1,3 +1,6 @@
+
+%Skript som räknar ut minsta antalet delintervall 
+
 a=0; b=3.6; n=1;
 
 while true

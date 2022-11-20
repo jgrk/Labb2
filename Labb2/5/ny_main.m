@@ -5,10 +5,10 @@ tol=10^-7;
 h=1;
 
 func=@(k)(VL(k,tol)-7*(2-k)^4);
-k=1:1:2;
-plot(k,arrayfun(func,k))
+k=1:0.01:2;
+plot(k,arrayfun(func,k)) %Visualisering av rot
 
-r1=SekMet(func,1,2,tol)
+r1=SekMet(func,1,2,tol) %rot
 
 function T = VL(k,tol)
 

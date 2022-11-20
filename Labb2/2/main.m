@@ -5,7 +5,7 @@ a=0; b=3.6; h=0.075;  %Randpunkter(a,b), steglängd(h)
 Etrunc=1; T2=1;
 
 disp("     T                         Trunc")
-while Etrunc > 10^-5
+while Etrunc > 10^-5 %Fortsätter tills trunkeringsfelet är tillräckligt litet
     
     
     T=CDM(a,b,h);

@@ -1,10 +1,10 @@
 clear all; close all; clc;
 
-T=3.57010733633814;
+T=3.57010733633814; %Resultatet av periodberäkning
 inter=[0, 2*T];
 init=[3*pi/7, 0.9];
 
-[t,y]=ode45(@DE ,inter, init);
+[t,y]=ode45(@DE ,inter, init); 
 
 plot(t,y(:,1),'-o',t,y(:,2),'-o')
 title('Lösning (L=2.4, g=9.81) med ODE45');
@@ -16,11 +16,15 @@ anim(t,y,T)
 
 theta=y(:,1);
 
+%Interpolerar m.h.a andragradsploynom i närheten av två olika nollställen
+
 p1=polyfit([t(15) t(16) t(17)], [theta(15) theta(16) theta(17)], 2);
 
-f1=@(x)polyval(p1,x);
+f1=@(x)polyval(p1,x); 
 
-fp1=@(a,b)(f1(a)-f1(b))/(a-b);
+%Använder sekantmetoden på respektive interpolation för att erhålla en rot
+
+fp1=@(a,b)(f1(a)-f1(b))/(a-b); 
 x0=1;
 x1=2;
 tr=1;
@@ -53,9 +57,10 @@ end
 
 r2=x1;
 
-period = r2-r1;
+period = r2-r1; 
 
 function [du]=DE(t,u)
+%Funktion som gör om våran orginella DE till sys. av 1ordn. DE.
     L=2.7;
     g=9.82;
     du(1)=u(2);
